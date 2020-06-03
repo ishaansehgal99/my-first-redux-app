@@ -5,10 +5,12 @@ const counterReducer = (state = 0, action) => {
             return state + 1; 
         case "DECREMENT": 
             return state - 1; 
-        case "DOUBLE": 
+        case "MULTIPLY": 
             return state * 2; 
         case "HALVE": 
             return state / 2; 
+        case "CLEAR": 
+            return 0; 
         default: 
             return state;
     }
